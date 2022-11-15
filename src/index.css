@@ -3,6 +3,9 @@
   --secundary: #8c38ff;
   --dark: #131a26;
   --light: #eeee;
+  --digits: salmon;
+  --bc: lightblue;
+
 }
 
 * {
@@ -13,7 +16,7 @@
 }
 
 body {
-  background-color: --light;
+  background-color: var(--bc)
 }
 
 .App {
@@ -21,6 +24,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: 16px;
 }
 
 .calculator {
@@ -62,5 +66,23 @@ button:hover {
 }
 
 .operators {
-  
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+  /* background-color: var(--primary); */
+  background-color: var(--digits);
+  font-weight: 700;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark)
 }
