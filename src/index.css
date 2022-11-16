@@ -15,9 +15,15 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
-body {
+/* body {
   background-color: var(--bc)
+} */
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, lightblue);
 }
+
 
 .App {
   display: flex;
@@ -72,7 +78,8 @@ button:hover {
 .operators button {
   flex: 1 1 0%;
   /* background-color: var(--primary); */
-  background-color: var(--digits);
+  /* background-color: var(--digits); */
+  background-color: lightcoral;
   font-weight: 700;
 }
 
